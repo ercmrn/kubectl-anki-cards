@@ -1,0 +1,642 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "e9f45a3a-2de8-11ed-8a6e-e2b55ff31026",
+    "deck_config_uuid": "e9f4650c-2de8-11ed-8a6e-e2b55ff31026",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "e9f4650c-2de8-11ed-8a6e-e2b55ff31026",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 10
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [],
+    "name": "kubectl",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "css": ".card {\n font-size: 16px;\n text-align: left;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic-d3287",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "command",
+                "ls-files"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "forward",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "General&nbsp;<code style=\"font-size:16px\">kubectl</code> syntax",
+                "<code style=\"font-size:16px\">kubectl [command] [TYPE] [NAME] [flags]</code>"
+            ],
+            "guid": "gGadcN-aWF",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "basics",
+                "syntax"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl help</code>",
+                "Get a quick primer of <code style=\"font-size:16px\">kubectl</code> commands"
+            ],
+            "guid": "Rnm2{v=<{",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "basics",
+                "kubectl"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl</code>",
+                "A command line tool for communicating with a Kubernetes cluster's control plane, via the Kubernetes API"
+            ],
+            "guid": "xga><L,NY~",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "basics",
+                "kubectl"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubeconfig</code>",
+                "A file at <code style=\"font-size:16px\">$HOME/.kube/config</code> that provides configuration to <code style=\"font-size:16px\">kubectl</code>"
+            ],
+            "guid": "tt;iz.9nQF",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Possible ways of specifying <code style=\"font-size:16px\">kubeconfig</code> file path",
+                "Default: <code style=\"font-size:16px\">$HOME/.kube/config</code>\n<br><br>\n<code style=\"font-size:16px\">KUBECONFIG</code> environment variable\n<br><br>\n<code style=\"font-size:16px\">--kubeconfig</code> setting on <code style=\"font-size:16px\">kubectl</code>"
+            ],
+            "guid": "Mlga{le%<G",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "basics",
+                "kubectl"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl api-resources</code>",
+                "Retrieve a list of all supported Kubernetes resource types and their abbreviations"
+            ],
+            "guid": "eGlzfMdz_7",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl alpha SUBCOMMAND [flags]</code>",
+                "Run an alpha SUBCOMMAND: a command added to <code style=\"font-size:16px\">kubectl</code> but not enabled by default.\n<br><br>\nNote: not all versions of kubectl have an alpha feature."
+            ],
+            "guid": "Qe]`$q/uNX",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl annotate</code>",
+                "Add or update the annotations of one or more resources. Annotations are descriptions of the resource: longer than labels and can even contain JSON"
+            ],
+            "guid": "l6FC9v[Z.W",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl api-versions</code>",
+                "List kubectl api versions available"
+            ],
+            "guid": "e(=.DKHr/)",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl apply -f FILENAME [flags]</code>",
+                "Apply a configuration change to a resource using a file (<code style=\"font-size:16px\">-f FILENAME</code> is the most common approach) or stdin."
+            ],
+            "guid": "sn1bJPK3k-",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl attach POD -c CONTAINER [-i] [-t] [flags]</code>",
+                "Attach to the currently running process in POD's CONTAINER. In comparison, <code style=\"font-size:16px\">kubectl exec</code> creates and attaches to a new process."
+            ],
+            "guid": "pI<[,d>FGU",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl auth [flags] [options]</code>",
+                "Inspect authorization - functionally useless. Use <code style=\"font-size:16px\">kubectl auth can-i</code> or <code style=\"font-size:16px\">kubcetl auth reconcile</code> as needed."
+            ],
+            "guid": "ms;QKKv29<",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl auth can-i VERB [TYPE | TYPE/NAME | NONRESOURCEURL] [flags]</code>",
+                "Check if current user has authorization to do VERB on [TYPE | TYPE/NAME | NONRESOURCEURL]. "
+            ],
+            "guid": "g4yc+;/`?5",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl autoscale (-f FILENAME | TYPE NAME | TYPE/NAME) [--min=MINPODS] --max=MAXPODS [--cpu-percent=CPU]</code>",
+                "Automatically scale pods managed by a replication controller. Creates a HorizontalPodAutoscaler that automatically chooses and sets the number of pods that run in a Kubernetes cluster up to the defined --max value."
+            ],
+            "guid": "rgGi]xO{i}",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "app-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl certificate approve</code>",
+                "Approve a certificate signing request (CertificateSigningRequest - CSR): tells a certificate signing controller to issue a certificate to the requestor with the attributes requested in the CSR."
+            ],
+            "guid": "k|NSFNE:k@",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "cluster-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl certificate deny</code>",
+                "Reject a certificate signing request (CertificateSigningRequest - CSR): tells a certificate signing controller to deny a CSR."
+            ],
+            "guid": "BkoEQeE9Wq",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "cluster-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl cluster-info</code>",
+                "Display addresses of the control plane and services with label <code style=\"font-size:16px\">kubernetes.io/cluster-service=true</code>. To further debug and diagnose cluster problems, use <code style=\"font-size:16px\">kubectl cluster-info dump</code>."
+            ],
+            "guid": "N*6x(fJ[7-",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "cluster-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl cluster-info dump [flags]</code>",
+                "Dump detailed cluster information suitable for debugging and diagnosing cluster problems."
+            ],
+            "guid": "yuva)a{kh2",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "cluster-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl completion SHELL</code>",
+                "Output shell completion code for the specified shell (bash, zsh, fish, or powershell). The shell code must be evaluated to provide interactive completion of kubectl commands."
+            ],
+            "guid": "ilaq%lT[TV",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config current-context</code>",
+                "Display the current context"
+            ],
+            "guid": "B5y>pBx!x]",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config delete-cluster NAME</code>",
+                "Delete the specified cluster from kubeconfig. NAME must be specified."
+            ],
+            "guid": "r>F`pM??qn",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config delete-context NAME</code>",
+                "Delete the specified context from kubeconfig."
+            ],
+            "guid": "j?KGfCZ%i?",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config delete-user NAME</code>",
+                "Delete the specified user from kubeconfig"
+            ],
+            "guid": "s|/eLy>*^c",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config get-clusters</code>",
+                "Display the clusters defined in kubeconfig"
+            ],
+            "guid": "G[FvTg/OpL",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config get-contexts</code>",
+                "Display contexts from kubeconfig"
+            ],
+            "guid": "i:V9nXfCu>",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config get-users</code>",
+                "Display users defined in kubeconfig"
+            ],
+            "guid": "jnq&6N#N9e",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config rename-context CONTEXT_NAME NEW_NAME</code>",
+                "Rename a context defined in kubeconfig from CONTEXT_NAME to NEW_NAME"
+            ],
+            "guid": "qK}V+DartX",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config set PROPERTY_NAME PROPERTY_VALUE</code>",
+                "Set an individual value in kubeconfig."
+            ],
+            "guid": "L<.^y-#af+",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config set-cluster NAME</code>",
+                "Set a cluster entry in kubeconfig."
+            ],
+            "guid": "yeOrh/Elb)",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config set-context NAME</code>",
+                "Set a context entry in kubeconfig"
+            ],
+            "guid": "s&-jZn:4<L",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config set-credentials NAME</code>",
+                "Set a user entry in kubeconfig"
+            ],
+            "guid": "wr94/zVL|-",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config unset PROPERTY_NAME</code>",
+                "Unset an individual value in kubeconfig"
+            ],
+            "guid": "iH6z{$5U2Y",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config use-context CONTEXT_NAME</code>",
+                "Set the current-context to CONTEXT_NAME"
+            ],
+            "guid": "Kh,^Pj8wQe",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl config view</code>",
+                "Display merged kubeconfig settings or a specified kubeconfig file."
+            ],
+            "guid": "ySC6e_3W+0",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "settings-and-usage"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl cordon NODE</code>",
+                "Mark node as unschedulable"
+            ],
+            "guid": "H@pRZ$CX1.",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "cluster-management",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl cp FILE_SPEC_SRC FILE_SPEC_DEST</code>",
+                "Copy files and directories to and from containers.<br><br>\nNote: requires that the \"tar\" binary is present in the container image."
+            ],
+            "guid": "QVBdJwa4en",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "kubectl",
+                "operations",
+                "working-with-apps"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl create -f FILENAME</code>",
+                "Create one or more Kubernetes resources from a file or from stdin. "
+            ],
+            "guid": "dr8,5i-]A]",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "getting-started",
+                "kubectl",
+                "operations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<code style=\"font-size:16px\">kubectl delete (-f FILENAME | TYPE [NAME | /NAME | -l label | --all]) [flags]</code>",
+                "Delete resources by file names, stdin, resources and names, or by resources and label selector."
+            ],
+            "guid": "JzU~Q.$H_~",
+            "note_model_uuid": "e9f483fc-2de8-11ed-8a6e-e2b55ff31026",
+            "tags": [
+                "getting-started",
+                "kubectl",
+                "operations"
+            ]
+        }
+    ]
+}
